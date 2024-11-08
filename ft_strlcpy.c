@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:26:48 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/08 13:51:15 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 18:00:12 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,14 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	size_t	i;
 
 	src_l = ft_strlen(src);
-	i = -1;
+	i = 0;
 	if (size == 0)
 		return (src_l);
-	while (src[++i] && (i < (size - 1)))
+	while (src[i] && (i < (size - 1)))
+	{
 		dst[i] = src[i];
+		i++;
+	}
 	dst[i] = 0;
 	return (src_l);
 }

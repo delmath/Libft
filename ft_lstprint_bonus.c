@@ -1,34 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
+/*   ft_lstprint_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/07 13:56:55 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/08 17:45:13 by madelvin         ###   ########.fr       */
+/*   Created: 2024/11/08 18:03:02 by madelvin          #+#    #+#             */
+/*   Updated: 2024/11/08 18:45:56 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/**
- * @brief The ft_lstsize() function counts the number of elements 
- * in the list 'lst'.
- * @param lst The list to count elements in.
- * @return The number of elements in the list.
- */
-int	ft_lstsize(t_list	*lst)
+void	ft_lstprint(t_list *lst, size_t fd)
 {
-	size_t	size;
-	t_list	*tmp;
+	size_t	i;
 
-	size = 0;
-	tmp = lst;
-	while (tmp)
+	i = 0;
+	while (lst)
 	{
-		size++;
-		tmp = tmp->next;
+		ft_putchar_fd('[', fd);
+		ft_putnbr_fd(i, fd);
+		ft_putstr_fd("]( ", fd);
+		ft_putstr_fd((char *)lst->content, fd);
+		ft_putstr_fd(" )", fd);
+		if (lst->next)
+			ft_putstr_fd("->", fd);
+		lst = lst->next;
+		i++;
 	}
-	return (size);
+	ft_putchar_fd('\n', fd);
 }

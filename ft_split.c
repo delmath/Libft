@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 17:23:34 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/08 13:51:31 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 17:56:05 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,8 +60,8 @@ static size_t	ft_split_word(char **dst, char c, const char *s)
 
 	i = 0;
 	start = 0;
-	end = -1;
-	while (s[++end])
+	end = 0;
+	while (s[end])
 	{
 		if (s[end] != c && (end == 0 || s[end - 1] == c))
 			start = end;
@@ -71,6 +71,7 @@ static size_t	ft_split_word(char **dst, char c, const char *s)
 				return (1);
 			i++;
 		}
+		end++;
 	}
 	dst[i] = 0;
 	return (0);

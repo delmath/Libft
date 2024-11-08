@@ -1,32 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_lstmake_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/07 12:24:20 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/08 17:57:10 by madelvin         ###   ########.fr       */
+/*   Created: 2024/11/08 18:07:03 by madelvin          #+#    #+#             */
+/*   Updated: 2024/11/08 18:44:44 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/**
- * @brief The ft_striteri() function applies the function ’f’
- * to each character of the string ’s’
- * to create a new string resulting from successive applications of ’f’.
- * @param s The string on which to iterate.
- * @param f The function to apply to each character.
- */
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+t_list	*ft_lstmake_bonus(void **tab, size_t size, void (*del)(void *))
 {
+	t_list	*lst;
+	t_list	*tmp;
 	size_t	i;
 
+	lst = NULL;
 	i = 0;
-	while (s[i])
+	while (i < size)
 	{
-		f(i, s + i);
+		tmp = malloc(sizeof(t_list));
+		if (!tmp)
+		{
+			ft_lstclear(&lst, del);
+			return (NULL);
+		}
+		tmp->content = tab[i];
+		tmp->next = NULL;
+		ft_lstadd_back(&lst, tmp);
 		i++;
 	}
+	return (lst);
+}
+
+void	del(void *content)
+{
+	free(content);
+}
+
+int	main(int args, char **argv)
+{
+	ft_lstprint(ft_lstmake_bonus((void **)argv, args, del), 1);
 }

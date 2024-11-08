@@ -1,5 +1,7 @@
 NAME = libft.a
 
+OBJDIR = obj
+
 SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 	ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c ft_strlen.c ft_strlcpy.c \
 	ft_strlcat.c ft_toupper.c ft_tolower.c ft_strrchr.c ft_strnstr.c \
@@ -12,8 +14,10 @@ SRCSB = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c \
 	ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c \
 	ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
 
-OBJS = $(SRCS:.c=.o)
-OBJB = $(SRCSB:.c=.o)
+INC = libft.h
+
+OBJS = $(SRCS:%.c=$(OBJDIR)/%.o)
+OBJB = $(SRCSB:%.c=$(OBJDIR)/%.o)
 
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
@@ -24,11 +28,13 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(AR) $(NAME) $(OBJS)
 
-%.o: %.c
-	$(CC) -c $(CFLAGS) $?
+$(OBJDIR)/%.o: %.c $(INC)
+	@mkdir -p $(OBJDIR)
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS) $(SRCSB:.c=.o)
+	rm -f $(OBJS) $(OBJB)
+	rm -rf $(OBJDIR)
 
 fclean: clean
 	rm -f $(NAME)

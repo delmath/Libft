@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 11:29:03 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/08 13:52:16 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 17:44:48 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,9 @@ static int	ft_get_num_size(int n)
  */
 char	*ft_itoa(int n)
 {
-	char	*str;
-	int		size;
-	int		sign;
+	char		*str;
+	size_t		size;
+	int			sign;
 
 	size = ft_get_num_size(n);
 	sign = 1;

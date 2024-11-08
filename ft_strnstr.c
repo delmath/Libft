@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 18:21:18 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/08 13:51:01 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 17:58:34 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,16 +30,17 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	i1;
 	size_t	i2;
 
-	i1 = -1;
+	i1 = 0;
 	if (!*little)
 		return ((char *)big);
-	while (big[++i1] && i1 < len)
+	while (big[i1] && i1 < len)
 	{
 		i2 = 0;
 		while (big[i1 + i2] == little[i2] && little[i2] && i1 + i2 < len)
 			i2++;
 		if (!little[i2])
 			return ((char *)big + i1);
+		i1++;
 	}
 	return (0);
 }

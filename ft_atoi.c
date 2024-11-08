@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 19:51:45 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/08 13:53:01 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 18:36:26 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
  */
 int	ft_atoi(const char *str)
 {
-	int				i;
+	size_t			i;
 	int				sign;
 	unsigned long	result;
 
