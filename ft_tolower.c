@@ -6,12 +6,12 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 17:26:57 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/05 17:50:45 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 13:50:46 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
- * @brief Converts a uppercase letter to lowercase,
+ * @brief The ft_tolower() function converts a uppercase letter to lowercase,
  * if possible owtherwise returns c
  * @param c The character to convert
  * @return The lowercase letter

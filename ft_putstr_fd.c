@@ -6,14 +6,15 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 12:36:00 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/07 12:36:43 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 13:51:33 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief Outputs the string ’s’ to the given file descriptor.
+ * @brief The ft_putstr_fd() function outputs the string ’s’ to
+ * the given file descriptor.
  * @param s The string to output.
  * @param fd The file descriptor on which to write.
  */

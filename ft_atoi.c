@@ -6,15 +6,15 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 19:51:45 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/08 12:26:09 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 13:53:01 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief The atoi() function converts the initial
- * portion of the string pointed to by nptr to int.
+ * @brief The ft_atoi() function converts a 
+ * string pointed by str to int.
  * @param str The string to convert to int.
  * @return The converted int value.
  */

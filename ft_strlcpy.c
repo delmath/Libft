@@ -6,14 +6,15 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:26:48 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/05 19:35:12 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 13:51:15 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief Copies up to (size - 1) characters from the NUL-terminated string src
+ * @brief The ft_strlcpy() function copies up to (size - 1)
+ * characters from the NUL-terminated string src
  * to dst, NUL-terminating the result.
  * @param dst The destination string
  * @param src The source string

@@ -6,14 +6,15 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 10:40:29 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/08 12:32:44 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 13:51:25 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief Allocates sufficient memory for a copy of the string s,
+ * @brief The ft_strdup() function allocates sufficient
+ * memory for a copy of the string s,
  * does the copy, and returns a pointer to it.
  * The pointer may subsequently be used as an argument to the function free(3).
  * @param s The string to duplicate.

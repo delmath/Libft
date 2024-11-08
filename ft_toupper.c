@@ -6,12 +6,12 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 14:27:14 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/05 17:50:46 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 13:50:42 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
- * @brief Converts a lowercase letter to uppercase,
+ * @brief The ft_toupper() function converts a lowercase letter to uppercase,
  * if possible owtherwise returns c
  * @param c The character to convert
  * @return The uppercase letter

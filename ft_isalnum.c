@@ -6,14 +6,14 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 14:02:06 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/05 17:50:33 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 13:52:30 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /** 
- * @brief Test for an alphanumeric character.
+ * @brief The ft_isalnum isalnum() function test for an alphanumeric character.
  * @param c The character to test.
  * @return 1 if c is an alphanumeric character, 0 otherwise.
 */

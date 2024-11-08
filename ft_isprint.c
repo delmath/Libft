@@ -6,12 +6,12 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 14:16:53 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/05 17:50:37 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 13:52:19 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /** 
- * @brief The isprint() function tests for any printing character, 
+ * @brief The ft_isprint() function tests for any printing character, 
  * including space (` ').
  * @param c The character to test.
  * @return The isprint() function returns zero if the character tests false 

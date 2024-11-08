@@ -6,14 +6,15 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 14:26:46 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/05 17:50:42 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 13:51:13 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief Returns the length of the string s.
+ * @brief The ft_strlen() function eeturns the
+ * length of the string s.
  * @param s The string to measure
  * @return The length of the string
  */

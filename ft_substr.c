@@ -6,14 +6,15 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 11:35:41 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/07 10:36:47 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 13:50:50 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief Allocates (with malloc(3)) and returns a substring from the string ’s’.
+ * @brief The ft_substr() function allocates (with malloc(3)) and returns
+ * a substring from the string ’s’.
  * The substring begins at index ’start’ and is of maximum size ’len’.
  * @param s The string from which to create the substring.
  * @param start The start index of the substring in the string ’s’.

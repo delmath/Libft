@@ -6,14 +6,14 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 17:55:27 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/05 19:03:08 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 13:51:52 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief The  memchr()  function scans the initial n bytes of the memory area
+ * @brief The  ft_memchr() function scans the initial n bytes of the memory area
  * pointed to by s for the first instance of c. Both c and the bytes of the
  * memory area pointed to by s are interpreted as unsigned char.
  * @param s The memory area to be scanned

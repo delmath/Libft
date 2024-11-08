@@ -6,14 +6,14 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 14:31:51 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/08 13:19:56 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 13:51:58 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief The lstmap() function creates a new list by applying 
+ * @brief The ft_lstmap() function creates a new list by applying 
  * the function 'f' to each element of the given list 'lst'.
  * @param lst The list to iterate over.
  * @param f The function to apply to each element.

@@ -6,14 +6,14 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 18:21:18 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/07 10:37:57 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 13:51:01 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief The strnstr() function locates the first occurrence
+ * @brief The ft_strnstr() function locates the first occurrence
  * of the null-terminated
  * string little in the string big, where not more than
  * len characters are searched.

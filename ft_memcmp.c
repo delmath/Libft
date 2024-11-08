@@ -6,14 +6,14 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 18:08:22 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/05 18:19:58 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 13:51:50 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief The memcmp() function compares the first n bytes
+ * @brief The ft_memcmp() function compares the first n bytes
  * (each interpreted as unsigned char) of the memory areas s1 and s2.
  * @param s1 The first memory area to compare
  * @param s2 The second memory area to compare

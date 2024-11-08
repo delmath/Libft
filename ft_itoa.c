@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 11:29:03 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/07 12:34:20 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 13:52:16 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ static int	ft_get_num_size(int n)
 }
 
 /**
- * @brief Allocates (with malloc(3)) and returns a string
+ * @brief The ft_itoa() function allocates and returns a string
  * representing the integer
  * received as an argument. Negative numbers must be handled.
  * @param n The integer to convert.

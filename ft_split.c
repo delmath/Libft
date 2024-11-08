@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 17:23:34 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/07 13:37:41 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 13:51:31 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,8 +77,9 @@ static size_t	ft_split_word(char **dst, char c, const char *s)
 }
 
 /**
- * @brief Allocates (with malloc(3)) and returns an array of strings obtained
- * by splitting ’s’ using the character ’c’ as a delimiter. The array must be
+ * @brief The ft_split() function allocates (with malloc(3)) and returns
+ * an array of strings obtained by splitting ’s’ using the character ’c’
+ * as a delimiter. The array must be
  * ended by a NULL pointer.
  * @param s The string to be split.
  * @param c The delimiter character.

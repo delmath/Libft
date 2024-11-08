@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 12:54:53 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/07 10:37:18 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 13:50:56 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ static size_t	ft_check_is_set(char c, char const *set)
 }
 
 /**
- * @brief Allocates (with malloc(3)) and returns a copy of ’s1’
+ * @brief This ft_strtrim() function allocates and returns a copy of ’s1’
  * with the characters
  * specified in ’set’ removed from the beginning and the end of the string.
  * @param s1 The string to be trimmed.

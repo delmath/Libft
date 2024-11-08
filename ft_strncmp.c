@@ -6,14 +6,14 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 17:51:32 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/07 11:53:43 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 13:51:05 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief The strcmp() function compares the two strings s1 and s2.
+ * @brief The ft_strcmp() function compares the two strings s1 and s2.
  * The locale is not taken into account
  * (for a locale-aware comparison, see strcoll(3)).
  * The comparison is done using unsigned characters.

@@ -6,15 +6,15 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 15:31:57 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/05 19:49:51 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 13:51:48 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief Copies n bytes from memory area src to memory area dest.
- * The memory areas must not overlap.
+ * @brief the ft_memcpy() fucntion copies n bytes from memory area src
+ * to memory area dest. The memory areas must not overlap.
  * @param dest The destination memory area.
  * @param src The source memory area.
  * @param n The number of bytes to copy.

@@ -6,14 +6,15 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 12:18:35 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/07 12:35:12 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 13:51:10 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief Applies the function ’f’ to each character of the string ’s’
+ * @brief The ft_strmapi() function applies the function ’f’
+ * to each character of the string ’s’
  * to create a new string resulting from successive applications of ’f’.
  * @param s The string on which to iterate.
  * @param f The function to apply to each character.

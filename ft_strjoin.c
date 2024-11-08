@@ -6,14 +6,15 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 12:25:03 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/07 12:33:54 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 13:51:20 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief Allocates (with malloc(3)) and returns a new string,
+ * @brief The ft_strjoin() function allocates (with malloc(3))
+ * and returns a new string,
  * which is the result of the concatenation of ’s1’ and ’s2’.
  * @param s1 The prefix string.
  * @param s2 The suffix string.

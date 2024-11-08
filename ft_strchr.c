@@ -6,12 +6,12 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 17:34:01 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/06 10:53:12 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 13:51:28 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
- * @brief The strchr() function returns a pointer to the first
+ * @brief The ft_strchr() function returns a pointer to the first
  * occurrence of the character c in the string s.
  * @param s The string to search
  * @param c The character to search for

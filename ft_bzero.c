@@ -6,14 +6,14 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 14:57:17 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/05 17:50:32 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 13:52:40 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief Set a block of memory to zero.
+ * @brief The ft_bzero() function set a block of memory to zero.
  * @param s The memory to zero.
  * @param n The number of bytes to zero.
  */

@@ -6,12 +6,12 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 17:41:31 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/05 19:02:32 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 13:50:59 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
- * @brief The strrchr() function returns a pointer to the last occurrence of
+ * @brief The ft_strrchr() function returns a pointer to the last occurrence of
  * the character c in the string s.
  * @param s The string to search
  * @param c The character to search for
