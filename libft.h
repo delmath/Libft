@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 14:02:10 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/08 18:44:32 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/08 18:54:41 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,6 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
-void	ft_lstprint(t_list *lst, size_t fd);
-t_list	*ft_lstmake_bonus(void **tab, size_t size, void (*del)(void *));
+// void	ft_lstprint(t_list *lst, size_t fd);
+// t_list	*ft_lstmake_bonus(void **tab, size_t size, void (*del)(void *));
 #endif
