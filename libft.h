@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 14:02:10 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/10 16:22:33 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/10 20:40:00 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,8 @@
 # define LIBFT_H
 
 # include <unistd.h>
-# include <stdlib.h>
-# include <stdint.h>
 
+# define SPACE_LOWER_UPPER 32
 # define MAX_INT 2147483647
 # define MIN_INT -2147483648
 # define MAX_L 9223372036854775807

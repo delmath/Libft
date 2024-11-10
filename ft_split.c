@@ -6,11 +6,12 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 17:23:34 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/10 15:25:27 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/10 20:42:44 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 static char		**ft_free_all(char **dst);
 static size_t	ft_count_words(char const *s, char c);
@@ -31,11 +32,11 @@ char	**ft_split(char const *s, char c)
 	size_t	word_count;
 	char	**dst;
 
-	if (!s)
+	if (NULL == s)
 		return (NULL);
 	word_count = ft_count_words(s, c);
 	dst = ft_calloc((word_count + 1), sizeof(char *));
-	if (!dst)
+	if (NULL == dst)
 		return (NULL);
 	if (ft_split_word(dst, c, s))
 		return (ft_free_all(dst));
@@ -66,7 +67,7 @@ static size_t	ft_count_words(char const *s, char c)
 static int	ft_make_word(char **dst, char const *s, size_t size, size_t i)
 {
 	dst[i] = ft_substr(s, 0, size);
-	if (!dst[i])
+	if (NULL == dst[i])
 		return (-1);
 	return (0);
 }
@@ -103,6 +104,5 @@ static size_t	ft_split_word(char **dst, char c, const char *s)
 		}
 		end++;
 	}
-	dst[i] = 0;
 	return (0);
 }

@@ -6,11 +6,12 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 11:35:41 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/08 13:50:50 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/10 21:28:53 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 /**
  * @brief The ft_substr() function allocates (with malloc(3)) and returns
@@ -27,14 +28,14 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t		s_l;
 
 	s_l = ft_strlen(s);
-	if (start >= s_l)
+	if (start >= s_l || NULL == s)
 		return (ft_strdup(""));
 	if (len > s_l - start)
 		len = s_l - start;
 	dst = malloc(sizeof(char) * (len + 1));
-	if (!dst || !s)
+	if (NULL == dst)
 		return (NULL);
 	ft_memcpy((void *)dst, (void *)(s + start), len + 1);
-	dst[len] = 0;
+	dst[len] = '\0';
 	return (dst);
 }

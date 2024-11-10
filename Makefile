@@ -23,7 +23,7 @@ OBJS = $(SRCS:%.c=$(OBJDIR)/%.o)
 all: $(NAME)
 
 bonus:
-	@$(MAKE) BONUS=1 all
+	$(MAKE) BONUS=1 all
 
 $(NAME): $(OBJS) $(INC)
 	$(AR) $(NAME) $^
@@ -34,7 +34,7 @@ $(OBJDIR)/%.o: %.c
 
 clean:
 	rm -f $(OBJS) $(OBJSB)
-	rm -rf $(OBJDIR)
+	@rm -rf $(OBJDIR)
 
 fclean: clean
 	rm -f $(NAME)

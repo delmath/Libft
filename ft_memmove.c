@@ -6,11 +6,12 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 15:50:29 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/10 15:21:10 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/10 20:57:10 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdint.h>
 
 /**
  * @brief The ft_memmove() function copies n bytes from memory area
@@ -29,7 +30,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	dest_p = (uint8_t *)dest;
 	src_p = (uint8_t *)src;
 	i = 0;
-	if (!dest && !src && n > 0)
+	if (NULL == dest && NULL == src && n > 0)
 		return (0);
 	if (src_p < dest_p)
 		while (n--)

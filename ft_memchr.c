@@ -6,11 +6,12 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 17:55:27 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/10 16:10:01 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/10 20:41:12 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdint.h>
 
 /**
  * @brief The  ft_memchr() function scans the initial n bytes of the memory area

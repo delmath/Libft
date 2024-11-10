@@ -6,9 +6,11 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 17:41:31 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/08 13:50:59 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/10 21:10:58 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 /**
  * @brief The ft_strrchr() function returns a pointer to the last occurrence of
@@ -22,16 +24,16 @@
  */
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*last;
+	size_t	s_l;
 
-	last = 0;
-	while (*s)
+	s_l = ft_strlen(s);
+	while (s_l > 0)
 	{
-		if (*s == (char)c)
-			last = (char *)s;
-		s++;
+		if (s[s_l] == (char)c)
+			return ((char *)s + s_l);
+		s_l--;
 	}
-	if (*s == (char)c)
+	if (s[s_l] == (char)c)
 		return ((char *)s);
-	return (last);
+	return (NULL);
 }

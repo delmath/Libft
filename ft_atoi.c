@@ -6,11 +6,13 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 19:51:45 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/10 16:09:39 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/10 20:41:28 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <string.h>
+#include <errno.h>
 
 /**
  * @brief The ft_atoi() function converts a 
@@ -36,6 +38,7 @@ int	ft_atoi(const char *str)
 	{
 		if (result > (unsigned long)((MAX_L / 10) - (str[i] - 48)))
 		{
+			errno = 34;
 			if (sign > 0)
 				return (-1);
 			else

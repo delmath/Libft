@@ -6,9 +6,11 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 17:34:01 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/08 13:51:28 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/10 21:14:08 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 /**
  * @brief The ft_strchr() function returns a pointer to the first
@@ -25,7 +27,7 @@ char	*ft_strchr(const char *s, int c)
 {
 	while (*s != (char)c)
 	{
-		if (!*s)
+		if (*s == '\0')
 			return (0);
 		s++;
 	}

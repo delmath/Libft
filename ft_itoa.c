@@ -6,11 +6,12 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 11:29:03 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/10 16:10:59 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/10 20:42:52 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 static int	ft_get_num_size(int n);
 
@@ -32,7 +33,7 @@ char	*ft_itoa(int n)
 	if (n < 0)
 		sign = -1;
 	str = malloc(sizeof(char) * (size + 1));
-	if (!str)
+	if (NULL == str)
 		return (NULL);
 	str[size] = 0;
 	while (size--)

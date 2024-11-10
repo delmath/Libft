@@ -6,11 +6,12 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 15:31:57 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/10 15:21:22 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/10 20:40:54 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdint.h>
 
 /**
  * @brief the ft_memcpy() fucntion copies n bytes from memory area src
@@ -30,7 +31,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	dest_p = (uint8_t *)dest;
 	src_p = (uint8_t *)src;
 	i = 0;
-	if (!dest && !src && n > 0)
+	if (NULL == dest && NULL == src && n > 0)
 		return (0);
 	while (i < n)
 	{

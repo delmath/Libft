@@ -6,11 +6,12 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 18:08:22 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/10 15:21:30 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/10 20:41:19 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdint.h>
 
 /**
  * @brief The ft_memcmp() function compares the first n bytes

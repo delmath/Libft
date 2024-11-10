@@ -6,11 +6,12 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 13:44:58 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/10 16:18:23 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/10 20:43:11 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 /**
  * @brief The ft_lstnew() function creates a new list element.

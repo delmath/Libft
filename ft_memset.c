@@ -6,11 +6,12 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 14:31:31 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/10 15:21:14 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/10 20:40:40 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdint.h>
 
 /**
  * @brief The ft_memset() function fills the first n bytes of the memory

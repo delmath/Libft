@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 18:21:18 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/08 17:58:34 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/10 20:16:29 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,5 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 			return ((char *)big + i1);
 		i1++;
 	}
-	return (0);
+	return (NULL);
 }

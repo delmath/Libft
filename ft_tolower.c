@@ -6,9 +6,11 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 17:26:57 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/10 16:06:34 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/10 20:37:44 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 /**
  * @brief The ft_tolower() function converts a uppercase letter to lowercase,
@@ -18,7 +20,7 @@
  */
 int	ft_tolower(int c)
 {
-	if (c <= 90 && c >= 65)
-		return (c + 32);
+	if (c <= 'Z' && c >= 'A')
+		return (c + SPACE_LOWER_UPPER);
 	return (c);
 }

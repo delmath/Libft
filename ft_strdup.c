@@ -6,11 +6,12 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 10:40:29 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/08 13:51:25 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/10 20:44:47 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 /**
  * @brief The ft_strdup() function allocates sufficient
@@ -26,10 +27,10 @@ char	*ft_strdup(const char *s)
 	size_t	len;
 
 	len = ft_strlen(s);
-	str = (char *)malloc(sizeof(char) * len + 1);
-	if (!str)
+	str = malloc(sizeof(char) * len + 1);
+	if (NULL == str)
 		return (NULL);
 	ft_memcpy(str, s, len);
-	str[len] = 0;
+	str[len] = '\0';
 	return (str);
 }

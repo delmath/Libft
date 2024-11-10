@@ -6,11 +6,12 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 14:07:40 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/08 13:52:05 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/10 20:43:22 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 /**
  * @brief The ft_lstdelone() function deletes and frees the given element

@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 13:16:55 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/08 17:57:34 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/10 20:07:49 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,6 @@ size_t	ft_strlcat(char *dst, char *src, size_t size)
 		dst[dst_l + i] = src[i];
 		i++;
 	}
-	dst[dst_l + i] = 0;
+	dst[dst_l + i] = '\0';
 	return (dst_l + src_l);
 }
