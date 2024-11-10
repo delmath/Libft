@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 18:08:22 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/08 17:53:09 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/10 15:21:30 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /**
  * @brief The ft_memcmp() function compares the first n bytes
- * (each interpreted as unsigned char) of the memory areas s1 and s2.
+ * (each interpreted as uint8_t) of the memory areas s1 and s2.
  * @param s1 The first memory area to compare
  * @param s2 The second memory area to compare
  * @param n The number of bytes to compare
@@ -24,7 +24,7 @@
  * first n bytes of s2.
  * 
  * For a nonzero return value, the sign is determined by the sign of
- * the difference between the first pair of bytes (interpreted as unsigned char)
+ * the difference between the first pair of bytes (interpreted as uint8_t)
  * that differ in s1 and s2.
  * 
  * If n is zero, the return value is zero.
@@ -36,8 +36,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		if (((unsigned char *)s1)[i] != ((unsigned char *)s2)[i])
-			return (((unsigned char *)s1)[i] - ((unsigned char *)s2)[i]);
+		if (((uint8_t *)s1)[i] != ((uint8_t *)s2)[i])
+			return (((uint8_t *)s1)[i] - ((uint8_t *)s2)[i]);
 		i++;
 	}
 	return (0);

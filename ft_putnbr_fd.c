@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 12:37:41 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/08 13:51:37 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/10 16:07:59 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	ft_putnbr_fd(int n, int fd)
 	if (nbr < 0)
 	{
 		ft_putchar_fd('-', fd);
-		nbr = (unsigned int)(nbr * -1);
+		nbr = nbr * -1;
 	}
 	if (nbr >= 10)
 		ft_putnbr_fd(nbr / 10, fd);

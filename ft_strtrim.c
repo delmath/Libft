@@ -6,21 +6,13 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 12:54:53 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/08 13:50:56 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/10 16:11:11 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	ft_check_is_set(char c, char const *set)
-{
-	size_t	i;
-
-	i = 0;
-	while (set[i] && set[i] != c)
-		i++;
-	return (set[i] == c);
-}
+static size_t	ft_check_is_set(char c, char const *set);
 
 /**
  * @brief This ft_strtrim() function allocates and returns a copy of ’s1’
@@ -56,4 +48,14 @@ char	*ft_strtrim(char const *s1, char const *set)
 		dst[i++] = s1[start++];
 	dst[i] = '\0';
 	return (dst);
+}
+
+static size_t	ft_check_is_set(char c, char const *set)
+{
+	size_t	i;
+
+	i = 0;
+	while (set[i] && set[i] != c)
+		i++;
+	return (set[i] == c);
 }

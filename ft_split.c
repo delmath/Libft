@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 17:23:34 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/10 15:16:10 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/10 15:25:27 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	word_count = ft_count_words(s, c);
-	dst = malloc((word_count + 1) * sizeof(char *));
+	dst = ft_calloc((word_count + 1), sizeof(char *));
 	if (!dst)
 		return (NULL);
 	if (ft_split_word(dst, c, s))

@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 14:31:31 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/08 13:51:44 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/10 15:21:14 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@
  */
 void	*ft_memset(void *s, int c, size_t n)
 {
-	unsigned char	*p;
+	uint8_t	*p;
 
-	p = (unsigned char *)s;
+	p = (uint8_t *)s;
 	while (n--)
-		*(p++) = (unsigned char)c;
+		*(p++) = (uint8_t)c;
 	return (s);
 }
