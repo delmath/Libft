@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 14:02:10 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/08 18:54:41 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/10 15:12:37 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdint.h>
 
 # define MAX_INT 2147483647
 # define MIN_INT -2147483648

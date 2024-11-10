@@ -6,26 +6,13 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 11:29:03 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/08 17:44:48 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/10 15:13:56 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_get_num_size(int n)
-{
-	int	size;
-
-	size = 0;
-	if (n <= 0)
-		size++;
-	while (n)
-	{
-		n /= 10;
-		size++;
-	}
-	return (size);
-}
+static int	ft_get_num_size(int n);
 
 /**
  * @brief The ft_itoa() function allocates and returns a string
@@ -56,4 +43,19 @@ char	*ft_itoa(int n)
 	if (sign == -1)
 		str[0] = '-';
 	return (str);
+}
+
+static int	ft_get_num_size(int n)
+{
+	int	size;
+
+	size = 0;
+	if (n <= 0)
+		size++;
+	while (n)
+	{
+		n /= 10;
+		size++;
+	}
+	return (size);
 }
