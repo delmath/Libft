@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 19:51:45 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/10 20:41:28 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/11 17:00:44 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,16 @@
 #include <errno.h>
 
 /**
- * @brief The ft_atoi() function converts a 
- * string pointed by str to int.
+ * @brief The  ft_atoi() function converts
+ * the initial portion of the string pointed to by nptr to int.
  * @param str The string to convert to int.
  * @return The converted int value.
  */
 int	ft_atoi(const char *str)
 {
-	size_t			i;
-	int				sign;
-	unsigned long	result;
+	int		sign;
+	size_t	i;
+	size_t	result;
 
 	i = 0;
 	sign = 1;

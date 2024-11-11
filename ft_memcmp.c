@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 18:08:22 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/10 20:41:19 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/11 16:09:50 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
  * @param s1 The first memory area to compare
  * @param s2 The second memory area to compare
  * @param n The number of bytes to compare
- * @return The  memcmp() function returns an integer less than,
+ * @return The  ft_memcmp() function returns an integer less than,
  * equal to, or greater than zero if the first n bytes of s1 is found,
  * respectively, to be less than, to match, or be greater than the
  * first n bytes of s2.

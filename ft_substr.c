@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 11:35:41 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/10 21:28:53 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/11 16:54:27 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t		s_l;
 
 	s_l = ft_strlen(s);
-	if (start >= s_l || NULL == s)
-		return (ft_strdup(""));
+	if (start >= s_l)
+		return (ft_calloc(1, sizeof(char)));
 	if (len > s_l - start)
 		len = s_l - start;
 	dst = malloc(sizeof(char) * (len + 1));

@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 10:36:53 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/10 20:41:59 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/11 17:00:34 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,17 @@
 #include <stdlib.h>
 
 /**
- * @brief The ft_calloc() function allocates memory for an array of
- * nmemb elements
- * of size bytes each and returns a pointer to the allocated memory.
- * The memory is set to zero.
- * If nmemb or size is 0, then calloc() returns either NULL, or a unique pointer
- * value that can later be successfully passed to free().
+ * @brief The  calloc() function allocates memory for
+ * an array of nmemb elements of size bytes each and
+ * returns a pointer to the allocated memory.  The memory
+ * is set to zero.  If nmemb or size is 0, then calloc()
+ * returns either NULL.
  * @param nmemb The number of elements to allocate.
  * @param size The size of each element.
- * @return The allocated memory.
+ * @return The ft_calloc() functions return a pointer
+ * to the allocated memory, which is suitably aligned
+ * for any built-in type.  On error, these functions
+ * return NULL.
  */
 void	*ft_calloc(size_t nmemb, size_t size)
 {

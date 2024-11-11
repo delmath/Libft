@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 14:02:05 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/10 20:35:52 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/11 17:00:17 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,6 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*last;
 
-	if (NULL == lst || NULL == new)
-		return ;
 	if (NULL == *lst)
 	{
 		*lst = new;

@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 12:54:53 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/10 21:07:45 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/11 16:54:36 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	i = 0;
 	end = 0;
 	start = 0;
-	if (NULL == s1 || NULL == set)
-		return (NULL);
 	while (s1[start] && ft_check_is_set(s1[start], set))
 		start++;
 	end = ft_strlen(s1);

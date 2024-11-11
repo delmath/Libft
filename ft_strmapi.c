@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 12:18:35 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/10 20:16:53 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/11 16:54:53 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	size_t	i;
 	char	*dst;
 
-	if (NULL == s || NULL == f)
-		return (NULL);
 	dst = ft_strdup(s);
 	if (NULL == dst)
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 12:36:00 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/10 20:04:44 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/11 16:17:29 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,5 @@
  */
 void	ft_putstr_fd(char *s, int fd)
 {
-	size_t	l;
-
-	l = ft_strlen(s);
-	write(fd, s, l);
+	write(fd, s, ft_strlen(s));
 }

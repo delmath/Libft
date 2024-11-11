@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 11:29:03 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/10 20:42:52 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/11 17:00:20 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,28 +17,27 @@ static int	ft_get_num_size(int n);
 
 /**
  * @brief The ft_itoa() function allocates and returns a string
- * representing the integer
- * received as an argument. Negative numbers must be handled.
+ * representing the integer received as an argument. Negative
+ * numbers must be handled.
  * @param n The integer to convert.
  * @return The string representing the integer. NULL if the allocation fails.
  */
 char	*ft_itoa(int n)
 {
-	char		*str;
-	size_t		size;
-	int			sign;
+	int		size;
+	int		sign;
+	char	*str;
 
 	size = ft_get_num_size(n);
 	sign = 1;
 	if (n < 0)
 		sign = -1;
-	str = malloc(sizeof(char) * (size + 1));
+	str = ft_calloc((size + 1), sizeof(char));
 	if (NULL == str)
 		return (NULL);
-	str[size] = 0;
-	while (size--)
+	while (size-- > 0)
 	{
-		str[size] = n % 10 * sign + '0';
+		str[size] = n % 10 * sign + 48;
 		n /= 10;
 	}
 	if (sign == -1)

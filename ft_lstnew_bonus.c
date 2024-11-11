@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 13:44:58 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/10 20:43:11 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/11 16:57:55 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ t_list	*ft_lstnew(void *content)
 	t_list	*new;
 
 	new = malloc(sizeof(t_list));
-	if (!new)
+	if (NULL == new)
 		return (NULL);
 	new->content = content;
 	new->next = NULL;

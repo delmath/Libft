@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 13:59:11 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/08 13:52:00 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/11 16:58:40 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@
  */
 t_list	*ft_lstlast(t_list *lst)
 {
-	if (!lst)
+	if (NULL == lst)
 		return (NULL);
-	while (lst->next)
+	while (NULL != lst->next)
 		lst = lst->next;
 	return (lst);
 }
