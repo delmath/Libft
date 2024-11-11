@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 13:56:55 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/11 15:54:52 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/11 17:35:13 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  * @param lst The list to count elements in.
  * @return The number of elements in the list.
  */
-int	ft_lstsize(t_list	*lst)
+int	ft_lstsize(t_list *lst)
 {
 	size_t	size;
 	t_list	*tmp;

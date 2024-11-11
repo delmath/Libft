@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 14:07:40 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/11 16:59:29 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/11 18:14:42 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,9 @@
  */
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-	del(lst->content);
-	free(lst);
+	if (NULL != lst || NULL != del)
+	{
+		del(lst->content);
+		free(lst);
+	}
 }

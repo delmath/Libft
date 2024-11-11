@@ -6,13 +6,14 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 19:51:45 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/11 17:00:44 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/11 17:33:34 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <string.h>
 #include <errno.h>
+#include <limits.h>
 
 /**
  * @brief The  ft_atoi() function converts
@@ -36,9 +37,9 @@ int	ft_atoi(const char *str)
 			sign = -1;
 	while (ft_isdigit(str[i]))
 	{
-		if (result > (unsigned long)((MAX_L / 10) - (str[i] - 48)))
+		if (result > (unsigned long)((LLONG_MAX / 10) - (str[i] - 48)))
 		{
-			errno = 34;
+			errno = ERANGE;
 			if (sign > 0)
 				return (-1);
 			else

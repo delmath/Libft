@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 14:02:10 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/11 14:23:02 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/11 17:40:14 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,6 @@
 # include <unistd.h>
 
 # define SPACE_LOWER_UPPER 32
-# define MAX_INT 2147483647
-# define MIN_INT -2147483648
-# define MAX_L 9223372036854775807
-
-typedef struct s_list
-{
-	void			*content;
-	struct s_list	*next;
-}	t_list;
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -64,7 +55,12 @@ char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
-// Bonus
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
+
 int		ft_lstsize(t_list *lst);
 
 void	ft_lstadd_back(t_list **lst, t_list *new);

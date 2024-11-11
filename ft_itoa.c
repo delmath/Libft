@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 11:29:03 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/11 17:00:20 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/11 18:29:15 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_itoa(int n)
 		return (NULL);
 	while (size-- > 0)
 	{
-		str[size] = n % 10 * sign + 48;
+		str[size] = n % 10 * sign + '0';
 		n /= 10;
 	}
 	if (sign == -1)
