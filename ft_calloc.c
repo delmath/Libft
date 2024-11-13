@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 10:36:53 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/13 03:01:51 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/13 03:21:51 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,12 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*ptr;
 
-	if (0 == nmemb || 0 == size)
+	if (nmemb == 0 || size == 0)
 		return (malloc(0));
 	if (size > SIZE_MAX / nmemb)
 		return (NULL);
 	ptr = malloc(nmemb * size);
-	if (NULL == ptr)
+	if (ptr == NULL)
 		return (NULL);
 	ft_bzero(ptr, nmemb * size);
 	return (ptr);

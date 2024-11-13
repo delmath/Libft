@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 14:31:51 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/11 18:14:19 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/13 03:24:29 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,12 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new_elem;
 
 	new_l = NULL;
-	if (NULL == lst || NULL == f || NULL == del)
+	if (lst == NULL || f == NULL || del == NULL )
 		return (NULL);
 	while (lst)
 	{
 		new_elem = malloc(sizeof(t_list));
-		if (NULL == new_elem)
+		if (new_elem == NULL)
 		{
 			ft_lstclear(&new_l, del);
 			return (NULL);

@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 10:40:29 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/13 03:05:48 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/13 03:27:01 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*ft_strdup(const char *s)
 
 	len = ft_strlen(s);
 	str = malloc(sizeof(char) * len + 1);
-	if (NULL == str)
+	if (str == NULL)
 	{
 		errno = ENOMEM;
 		return (NULL);

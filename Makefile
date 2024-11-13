@@ -14,7 +14,7 @@ endif
 
 INC = libft.h
 OBJDIR = obj
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 AR = ar -rcs
 
@@ -28,7 +28,7 @@ bonus:
 $(NAME): $(OBJS)
 	$(AR) $(NAME) $^
 
-$(OBJDIR)/%.o: %.c $(INC)
+$(OBJDIR)/%.o: %.c $(INC) Makefile
 	@mkdir -p $(OBJDIR)
 	$(CC) $(CFLAGS) -c $< -o $@
 

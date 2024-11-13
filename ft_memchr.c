@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 17:55:27 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/12 18:37:01 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/13 03:25:02 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
  */
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	while (n--)
+	while (n-- > 0)
 	{
 		if ((*(uint8_t *)s) == (uint8_t)c)
 			return ((char *)s);

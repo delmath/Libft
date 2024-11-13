@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 13:47:00 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/11 19:37:32 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/13 03:22:42 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@
  */
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if (NULL == lst)
+	if (lst == NULL)
 		return ;
-	if (NULL == *lst)
+	if (*lst == NULL)
 	{
 		*lst = new;
 		return ;

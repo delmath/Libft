@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 13:56:55 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/12 18:52:47 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/13 03:24:48 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_lstsize(t_list *lst)
 
 	size = 0;
 	tmp = lst;
-	while (NULL != tmp)
+	while (tmp != NULL)
 	{
 		size++;
 		tmp = tmp->next;

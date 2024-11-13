@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 12:24:20 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/12 18:48:45 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/13 03:27:17 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	size_t	i;
 
 	i = 0;
-	while (s[i])
+	while (s[i] != '\0')
 	{
 		f(i, s + i);
 		i++;

@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 17:23:34 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/11 16:55:49 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/13 03:40:49 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	**ft_split(char const *s, char c)
 
 	word_count = ft_count_words(s, c);
 	dst = ft_calloc((word_count + 1), sizeof(char *));
-	if (NULL == dst)
+	if (dst == NULL)
 		return (NULL);
 	if (ft_split_word(dst, c, s))
 		return (ft_free_all(dst));
@@ -65,7 +65,7 @@ static size_t	ft_count_words(char const *s, char c)
 static int	ft_make_word(char **dst, char const *s, size_t size, size_t i)
 {
 	dst[i] = ft_substr(s, 0, size);
-	if (NULL == dst[i])
+	if (dst[i] == NULL)
 		return (-1);
 	return (0);
 }
@@ -75,7 +75,7 @@ static char	**ft_free_all(char **dst)
 	size_t	i;
 
 	i = 0;
-	while (dst[i])
+	while (dst[i] != NULL)
 		free(dst[i++]);
 	free(dst);
 	return (NULL);
@@ -90,7 +90,7 @@ static size_t	ft_split_word(char **dst, char c, const char *s)
 	i = 0;
 	start = 0;
 	end = 0;
-	while (s[end])
+	while (s[end] != '\0')
 	{
 		if (s[end] != c && (end == 0 || s[end - 1] == c))
 			start = end;

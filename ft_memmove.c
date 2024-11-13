@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 15:50:29 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/11 23:26:38 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/13 03:25:13 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	dest_p = (uint8_t *)dest;
 	src_p = (uint8_t *)src;
 	if (src_p < dest_p)
-		while (n--)
+		while (n-- > 0)
 			dest_p[n] = src_p[n];
 	else
 		ft_memcpy(dest_p, src_p, n);

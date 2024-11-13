@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 12:54:53 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/12 18:51:09 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/13 03:48:44 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (end > start && ft_check_is_set(s1[end - 1], set))
 		end--;
 	dst = malloc(sizeof(char) * (end - start + 1));
-	if (!dst)
+	if (dst == NULL)
 		return (NULL);
 	while (start < end)
 		dst[i++] = s1[start++];

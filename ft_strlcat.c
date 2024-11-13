@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 13:16:55 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/11 17:11:36 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/13 03:50:59 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ size_t	ft_strlcat(char *dst, char *src, size_t size)
 	if (size <= dst_l)
 		return (src_l + size);
 	i = 0;
-	while (src[i] && (dst_l + i) < (size - 1))
+	while (src[i] != '\0' && (dst_l + i) < (size - 1))
 	{
 		dst[dst_l + i] = src[i];
 		i++;

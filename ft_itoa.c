@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 11:29:03 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/13 03:12:03 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/13 03:22:13 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_itoa(int n)
 	if (n < 0)
 		sign = -1;
 	str = malloc((size + 1) * sizeof(char));
-	if (NULL == str)
+	if (str == NULL)
 		return (NULL);
 	str[size] = '\0';
 	while (size-- > 0)

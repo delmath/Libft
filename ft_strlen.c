@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 14:26:46 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/11 23:28:34 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/13 03:50:15 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@
  */
 size_t	ft_strlen(const char *s)
 {
-	char	*old;
+	size_t	i;
 
-	old = (char *)s;
-	while (*s)
-		s++;
-	return (s - old);
+	i = 0;
+	while (s[i] != '\0')
+		i++;
+	return (i);
 }
