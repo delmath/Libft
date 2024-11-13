@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 12:54:53 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/11 16:54:36 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/12 18:51:09 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
 	size_t	end;
-	char	*dst;
 	size_t	i;
+	char	*dst;
 
 	i = 0;
 	end = 0;

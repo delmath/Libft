@@ -25,10 +25,10 @@ all: $(NAME)
 bonus:
 	$(MAKE) BONUS=1 all
 
-$(NAME): $(OBJS) $(INC)
+$(NAME): $(OBJS)
 	$(AR) $(NAME) $^
 
-$(OBJDIR)/%.o: %.c
+$(OBJDIR)/%.o: %.c $(INC)
 	@mkdir -p $(OBJDIR)
 	$(CC) $(CFLAGS) -c $< -o $@
 
@@ -39,6 +39,7 @@ clean:
 fclean: clean
 	rm -f $(NAME)
 
-re: fclean all
+re: fclean
+	$(MAKE) all
 
 .PHONY: all clean fclean re bonus

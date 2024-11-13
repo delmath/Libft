@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 17:26:57 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/10 20:37:44 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/12 18:44:54 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
  */
 int	ft_tolower(int c)
 {
-	if (c <= 'Z' && c >= 'A')
+	if (c >= 'A' && c <= 'Z')
 		return (c + SPACE_LOWER_UPPER);
 	return (c);
 }

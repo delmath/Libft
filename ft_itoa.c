@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 11:29:03 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/11 18:29:15 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/13 03:12:03 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,10 @@ char	*ft_itoa(int n)
 	sign = 1;
 	if (n < 0)
 		sign = -1;
-	str = ft_calloc((size + 1), sizeof(char));
+	str = malloc((size + 1) * sizeof(char));
 	if (NULL == str)
 		return (NULL);
+	str[size] = '\0';
 	while (size-- > 0)
 	{
 		str[size] = n % 10 * sign + '0';
@@ -52,7 +53,7 @@ static int	ft_get_num_size(int n)
 	size = 0;
 	if (n <= 0)
 		size++;
-	while (n)
+	while (n != 0)
 	{
 		n /= 10;
 		size++;
