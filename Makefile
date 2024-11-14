@@ -1,3 +1,6 @@
+
+.PHONY: all clean fclean re bonus
+
 NAME = libft.a
 SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
        ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c \
@@ -13,7 +16,7 @@ SRCS:= $(SRCS) ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c \
 endif
 
 INC = libft.h
-OBJDIR = obj
+OBJDIR = .obj
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 AR = ar -rcs
@@ -41,5 +44,3 @@ fclean: clean
 
 re: fclean
 	$(MAKE) all
-
-.PHONY: all clean fclean re bonus

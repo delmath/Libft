@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 14:17:43 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/13 03:23:04 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/13 20:16:21 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*next;
 
-	if (lst == NULL || del == NULL)
+	if (lst == NULL)
 		return ;
 	while (*lst != NULL)
 	{

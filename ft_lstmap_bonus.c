@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 14:31:51 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/13 03:24:29 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/14 22:00:06 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,12 @@
  * @return A new list, or NULL if the allocation fails.
  */
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
-	{
+{
 	t_list	*new_l;
 	t_list	*new_elem;
 
 	new_l = NULL;
-	if (lst == NULL || f == NULL || del == NULL )
+	if (lst == NULL || f == NULL)
 		return (NULL);
 	while (lst)
 	{

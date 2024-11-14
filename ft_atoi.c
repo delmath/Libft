@@ -6,13 +6,12 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 19:51:45 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/13 03:56:21 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/14 22:17:38 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <string.h>
-#include <errno.h>
 #include <limits.h>
 
 /**
@@ -39,7 +38,6 @@ int	ft_atoi(const char *str)
 	{
 		if (result > (unsigned long)((LLONG_MAX / 10) - (str[i] - '0')))
 		{
-			errno = ERANGE;
 			if (sign > 0)
 				return (-1);
 			else
