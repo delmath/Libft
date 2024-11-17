@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 19:51:45 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/14 22:17:38 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/17 11:38:44 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,7 @@ int	ft_atoi(const char *str)
 		{
 			if (sign > 0)
 				return (-1);
-			else
-				return (0);
+			return (0);
 		}
 		result = result * 10 + (str[i++] - '0');
 	}

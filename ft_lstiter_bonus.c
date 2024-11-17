@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 14:30:27 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/13 03:23:28 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/11/17 11:39:33 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
  */
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	if (NULL == f)
+	if (f == NULL)
 		return ;
 	while (lst != NULL)
 	{

@@ -36,7 +36,7 @@ $(OBJDIR)/%.o: %.c $(INC) Makefile
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS) $(OBJSB)
+	rm -f $(OBJS)
 	@rm -rf $(OBJDIR)
 
 fclean: clean
