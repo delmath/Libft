@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 12:25:03 by madelvin          #+#    #+#             */
-/*   Updated: 2024/11/17 11:40:18 by madelvin         ###   ########.fr       */
+/*   Updated: 2024/12/12 21:48:16 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	s1_len = ft_strlen(s1);
 	s2_len = ft_strlen(s2);
 	dst = malloc(sizeof(char) * (s1_len + s2_len + 1));
-	if (dst == NULL)
+	if (NULL == dst)
 		return (NULL);
 	ft_memcpy(dst, s1, s1_len);
 	ft_memcpy(dst + s1_len, s2, s2_len);
