@@ -6,7 +6,7 @@
 /*   By: madelvin <madelvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 17:24:40 by madelvin          #+#    #+#             */
-/*   Updated: 2025/09/30 17:56:50 by madelvin         ###   ########.fr       */
+/*   Updated: 2025/09/30 18:09:53 by madelvin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,7 @@ int ft_isascii(int c);
 int ft_isdigit(int c);
 int ft_isprint(int c);
 char *ft_itoa(int n);
+char *ft_strncpy(char *dest, const char *src, size_t n);
 void ft_lstadd_back(t_list **lst, t_list *new);
 void ft_lstadd_front(t_list **lst, t_list *new);
 void ft_lstclear(t_list **lst, void (*del)(void*));
